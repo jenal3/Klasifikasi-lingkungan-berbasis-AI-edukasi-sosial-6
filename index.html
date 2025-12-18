@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Klasifikasi Lingkungan Berbasis AI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #0d6efd, #6ea8fe);
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* LOGIN */
+        #loginPage {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-box {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 350px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .login-box h2 {
+            text-align: center;
+            color: #0d6efd;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #0d6efd;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0b5ed7;
+        }
+
+        /* CONTENT */
+        #contentPage {
+            display: none;
+            background: #f4f8ff;
+        }
+
+        header {
+            background: #0d6efd;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            background: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        section h3 {
+            color: #0d6efd;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            display: block;
+            margin: 15px auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #0d6efd;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- LOGIN PAGE -->
+<div id="loginPage">
+    <div class="login-box">
+        <h2>Login Edukasi Lingkungan</h2>
+        <input type="text" id="username" placeholder="Username (bebas)">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+    </div>
+</div>
+
+<!-- CONTENT PAGE -->
+<div id="contentPage">
+    <header>
+        <h1>Klasifikasi Lingkungan Berbasis AI</h1>
+        <p>Edukasi Sosial untuk Masa Depan Lingkungan</p>
+    </header>
+
+    <div class="container">
+
+        <section>
+            <h3>Pengertian</h3>
+            <p>
+                Klasifikasi lingkungan berbasis AI adalah proses pengelompokan kondisi
+                lingkungan menggunakan kecerdasan buatan. Teknologi ini membantu
+                mengenali tingkat pencemaran, kebersihan, dan kerusakan lingkungan
+                untuk meningkatkan kesadaran sosial masyarakat.
+            </p>
+            <img src="https://images.unsplash.com/photo-1581091870627-3e0cdfbb679f" alt="AI dan Lingkungan">
+        </section>
+
+        <section>
+            <h3>Cara Kerja</h3>
+            <p>
+                AI bekerja dengan mengumpulkan data lingkungan seperti gambar,
+                kualitas udara, dan kondisi sampah. Data tersebut dianalisis
+                menggunakan algoritma untuk menghasilkan klasifikasi lingkungan
+                yang akurat dan mudah dipahami.
+            </p>
+            <img src="https://images.unsplash.com/photo-1521791055366-0d553872125f" alt="Teknologi AI">
+        </section>
+
+        <section>
+            <h3>Ciri-ciri Klasifikasi Lingkungan Berbasis AI</h3>
+            <ul>
+                <li>Menggunakan data dan gambar lingkungan</li>
+                <li>Memanfaatkan kecerdasan buatan</li>
+                <li>Membantu edukasi dan kesadaran sosial</li>
+                <li>Proses cepat dan akurat</li>
+                <li>Mendukung pelestarian lingkungan</li>
+            </ul>
+            <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" alt="Lingkungan Bersih">
+        </section>
+
+        <section>
+            <h3>Kesimpulan</h3>
+            <p>
+                Pemanfaatan AI dalam klasifikasi lingkungan sangat membantu
+                masyarakat memahami kondisi alam di sekitarnya. Dengan edukasi
+                sosial yang tepat, teknologi ini dapat mendorong kepedulian dan
+                tindakan nyata untuk menjaga lingkungan demi masa depan yang lebih baik.
+            </p>
+            <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e" alt="Pelestarian Lingkungan">
+        </section>
+
+    </div>
+
+    <footer>
+        © 2025 Edukasi Lingkungan Berbasis AI
+    </footer>
+</div>
+
+<script>
+    function login() {
+        const password = document.getElementById("password").value;
+
+        if (password === "12345") {
+            document.getElementById("loginPage").style.display = "none";
+            document.getElementById("contentPage").style.display = "block";
+        } else {
+            alert("Password salah!");
+        }
+    }
+</script>
+
+</body>
+</html>
